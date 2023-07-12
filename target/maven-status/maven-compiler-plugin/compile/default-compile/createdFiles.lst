@@ -1,0 +1,8 @@
+model/ClassifierEvaluation.class
+control/RetrieveWekaInfo.class
+ClassifierClass.class
+model/AllEvaluationLists.class
+WalkForward.class
+utils/ClassifierEvaluationUtil.class
+ClassifierClass$1.class
+files/EvaluationFile.class
