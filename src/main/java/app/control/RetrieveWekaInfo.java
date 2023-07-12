@@ -55,7 +55,6 @@ public class RetrieveWekaInfo {
 
 
 		for(int index = 2; index < this.releaseIndex+1; index++){
-			System.out.println("REL: " + index);
 			String completePath = this.path + index;
 			DataSource source1 = new DataSource(completePath + "/Train.arff");
 			DataSource source2 = new DataSource(completePath + "/Test.arff");

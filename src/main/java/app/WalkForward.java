@@ -8,7 +8,7 @@ public class WalkForward {
         throw new IllegalStateException("Utility class");
     }
     private static final Logger logger = Logger.getLogger(WalkForward.class.getName());
-    private static final String pathDelimiter = "/";
+    private static final String PATH_DELIMITER = "/";
 
     private static void writeArffLine(FileWriter fileWriter, String[] val) throws IOException {
         for(int i = 3; i < val.length; i++){
@@ -79,9 +79,9 @@ public class WalkForward {
             String outputFilePathTest;
 
             for(int index = 2; index <= getMaxReleaseNumber(new FileReader(inputFilePath)); index++){
-                outputFilePathTrain = outputDirectoryPath + pathDelimiter + index + pathDelimiter + "Train.arff";
-                outputFilePathTest = outputDirectoryPath + pathDelimiter + index + pathDelimiter + "Test.arff";
-                new File(outputDirectoryPath + pathDelimiter + index).mkdir();
+                outputFilePathTrain = outputDirectoryPath + PATH_DELIMITER + index + PATH_DELIMITER + "Train.arff";
+                outputFilePathTest = outputDirectoryPath + PATH_DELIMITER + index + PATH_DELIMITER + "Test.arff";
+                new File(outputDirectoryPath + PATH_DELIMITER + index).mkdir();
 
                 FileWriter fileWriterTrain = new FileWriter(outputFilePathTrain);
                 arffInit(fileWriterTrain, "Train");
